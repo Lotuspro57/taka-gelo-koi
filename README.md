@@ -5,7 +5,16 @@ This is the renamed and redesigned **MyKhata**: same data, friendlier screens.
 
 <p align="center"><img src="design/icon-512.png" width="160" alt="App icon"></p>
 
-## What changed
+## New in v3.0 — balances, comparisons, language
+
+- **Three accounts: Wallet, bKash, Bank.** Set starting balances once (Home → ব্যালেন্স / Settings). Every income, expense, transfer, and পাওনা-দেনা entry is tagged with an account.
+- **Daily statement.** In খাতা each day shows *Opening → entries → Closing* per account. Closing of one day is always the opening of the next; if you adjust a balance by hand, the day is marked ✎.
+- **Transfers** between accounts (e.g. Bank → Wallet) never count as spending.
+- **Compare tab** (কই গেল? → তুলনা): week vs week, month vs month, year vs year spending, with a fair same-days comparison for the running period, daily average, biggest day, and which categories changed most. Week start (Sat/Sun/Mon) is in Settings.
+- **Bangla / English** switch: the EN/বাং button on Home, or Settings → ভাষা.
+- Old data keeps working: old single cash balance becomes the Wallet opening balance.
+
+## What changed (v2)
 
 | | MyKhata | টাকা গেল কই? |
 |---|---|---|
@@ -45,7 +54,7 @@ app/                    Android (Kotlin) WebView shell + bridge
 
 1. Create an empty repo on GitHub, then:
    ```bash
-   git init && git add . && git commit -m "টাকা গেল কই? v2.0"
+   git init && git add . && git commit -m "টাকা গেল কই? v3.0"
    git branch -M main
    git remote add origin https://github.com/<you>/<repo>.git
    git push -u origin main
